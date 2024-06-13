@@ -1,0 +1,34 @@
+<section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Community Posts
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    {% for post in posts %}
+                      <div class="post">
+                        <h4><a href="{% url 'post_detail' post.id %}">{{ post.title }}</a></h4>
+                        <p>{{ post.content|truncatewords:20 }}</p>
+                        <small>Posted by {{ post.author }} on {{ post.created_at }}</small>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div class="col-md-12 text-center">
+                  <a href="{% url 'post_new' %}" class="button button-a button-big button-rouded">Create New Post</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
