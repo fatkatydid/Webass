@@ -1606,3 +1606,18 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+.jhparent {
+  border: 1px solid black;
+  margin: 1px;
+  padding: 10px;
+  text-align: center;
+}
+.jhchild {
+  display: inline-block;
+  
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  border: 1px solid black;
+}
