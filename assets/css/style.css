@@ -832,13 +832,6 @@ a:hover {
 }
 
 .about-mf .about-img {
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: center; 
-  height: 100%;
-}
-
-.about-mf .about-img img {
   margin-left: 10px;
   margin-top: 2rem;
 }
@@ -884,17 +877,37 @@ a:hover {
 }
 
 .about-img img {
-  display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  margin-left: 10px;
-  margin-top: 0; /* 이미지 상단 여백 제거 */
+  max-height: none;
 }
 
+.about-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  
+}
+
+.col-md-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
 @media (min-width: 768px) {
+  .about-img img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
   .about-me {
-    padding-left: 30px; /* 좌측 여백 조정 */
-    padding-right: 15px; /* 우측 여백 조정 */
+    padding-left: 30px;
+    padding-right: 15px;
   }
 }
 
@@ -1262,6 +1275,20 @@ a:hover {
   }
 }
 /* 커뮤니티 섹션 스타일 */
+/* 사이트 소개 제목과 그 아래 텍스트의 글꼴 변경 */
+
+.title-left {
+  font-family: 'Arial', sans-serif; /* Contact 글자의 글꼴로 변경 */
+  font-size: 2rem; /* 원하는 크기로 조정 */
+}
+
+.custom-lead {
+  font-family: 'Arial', sans-serif; /* Contact 글자의 글꼴로 변경 */
+  font-size: 1rem; /* 원하는 크기로 조정 */
+  line-height: 1.6; /* 줄 간격 조정 */
+  text-align: justify; /* 양쪽 정렬 */
+  margin: 0; /* 여백 제거 */
+}
 .community-mf {
   background: white;
   padding: 30px;
@@ -1370,6 +1397,7 @@ a:hover {
   background: #0056b3;
   color: white;
 }
+
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -1584,7 +1612,69 @@ a:hover {
 .widget-tags ul li a {
   color: #fff;
 }
+/* 문의하기 섹션 스타일 */
+#contact {
+  padding: 60px 0;
+}
 
+.contact-mf .box-shadow-full {
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-mf .contact-contact {
+  margin-bottom: 30px;
+}
+
+.contact-mf .contact-contact h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-mf .contact-details {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-mf .contact-details li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-mf .php-email-form {
+  width: 100%;
+}
+
+.contact-mf .php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-mf .php-email-form .form-control {
+  border-radius: 4px;
+  padding: 10px 15px;
+  box-shadow: none;
+  font-size: 16px;
+}
+
+.contact-mf .php-email-form .form-control:focus {
+  border-color: #0078ff;
+}
+
+.contact-mf .php-email-form button[type=submit] {
+  background: #0078ff;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact-mf .php-email-form button[type=submit]:hover {
+  background: #0056b3;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
