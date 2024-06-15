@@ -1552,7 +1552,14 @@ a:hover {
     font-size: 1.9rem;
   }
 }
-
+@media (min-width: 768px) {
+  .blog-wrapper .post-box {
+    width: 100%; /* 미디어 쿼리에서도 동일하게 설정 */
+  }
+}
+.blog-wrapper .post-box {
+  width: 100%;
+}
 .blog-wrapper .post-meta {
   margin: 1rem 0;
 }
