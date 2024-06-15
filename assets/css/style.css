@@ -875,7 +875,9 @@ a:hover {
   margin: 0; /* 여백 제거 */
 }
 
-.title-left { 
+.title-left {
+  margin-top: 1rem; /* 소제목 위의 간격 추가 */
+  margin-bottom: 0.5rem; /* 소제목 아래의 간격 추가 */
   font-family: 'Arial', sans-serif; /* 제목 글꼴을 변경 */
 }
 .about-me {
