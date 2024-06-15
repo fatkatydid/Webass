@@ -400,6 +400,25 @@ a:hover {
 }
 
 /*------/ Button /------*/
+.custom-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #0078ff;
+  border: 2px solid #0078ff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
 .button {
   display: inline-block;
   padding: 0.3rem 0.6rem;
@@ -736,7 +755,7 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Hero Section(첫화면)
 --------------------------------------------------------------*/
 .hero {
   height: 100vh;
@@ -1524,6 +1543,7 @@ a:hover {
 /*--------------------------------------------------------------
 # Blog Single
 --------------------------------------------------------------*/
+
 .post-box,
 .form-comments,
 .box-comments,
