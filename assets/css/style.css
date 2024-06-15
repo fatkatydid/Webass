@@ -868,15 +868,15 @@ a:hover {
   background-color: #0078ff;
 }
 .custom-lead {
-  font-size: 1rem; /* 글씨 크기 조정 부분*/
+  font-size: 1rem; /* 글씨 크기 조정 부분 */
   line-height: 1.6; /* 줄 간격을 조정 */
-  font-family: 'Georgia', serif;  /* 글꼴을 변경 */
+  font-family: 'Arial', sans-serif;  /* 글꼴을 변경 */
   text-align: justify; /* 양쪽 정렬 */
   margin: 0; /* 여백 제거 */
 }
 
-.title-left {
-  font-family: 'Georgia', serif; /* 제목 글꼴을 변경 */
+.title-left { 
+  font-family: 'Arial', sans-serif; /* 제목 글꼴을 변경 */
 }
 .about-me {
   display: flex;
