@@ -22,22 +22,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-  <!-- <style>
-    .image-container {
-        float: left;
-        margin-right: 20px;
-    }
-    .text-container {
-        overflow: auto; 
-    }
-</style> -->
+
   <style>
     .image-container {
         float: left;
@@ -119,6 +104,18 @@
         }
 
   </style>
+
+<script>
+  function navigateToContact() {
+    window.location.href = "index.html#contact";
+  }
+  function navigateToabout() {
+    window.location.href = "index.html#about";
+  }
+  function navigateToservices() {
+    window.location.href = "index.html#services";
+  }
+</script>
 </head>
 
 <body>
@@ -133,15 +130,14 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">사이트 소개</a></li>
-          <li><a class="nav-link scrollto" href="#services">스포츠</a></li>
-          <li><a href="blog-single.html"><span>커뮤니티</span></a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact US</a></li>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about" onclick="navigateToabout()">사이트소개</a></li>
+          <li><a class="nav-link scrollto" href="#services" onclick="navigateToservices()">스포츠</a></li>
+          <li><a href="community.html"><span>커뮤니티</span></a></li>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact" onclick="navigateToContact()">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
   </header><!-- End Header -->
 
