@@ -12,6 +12,7 @@
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
+  
 }
 
 h1,
@@ -181,6 +182,7 @@ a:hover {
 .title-left {
   font-size: 2rem;
   position: relative;
+  
 }
 
 .title-left:before {
@@ -832,6 +834,13 @@ a:hover {
 }
 
 .about-mf .about-img {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center; 
+  height: 100%;
+}
+
+.about-mf .about-img img {
   margin-left: 10px;
   margin-top: 2rem;
 }
@@ -877,37 +886,17 @@ a:hover {
 }
 
 .about-img img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
-  max-height: none;
+  margin-left: 10px;
+  margin-top: 0; /* 이미지 상단 여백 제거 */
 }
-
-.about-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  
-}
-
-.col-md-6 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-
-
 
 @media (min-width: 768px) {
-  .about-img img {
-    width: 100%;
-    height: auto;
-    max-height: none;
-  }
   .about-me {
-    padding-left: 30px;
-    padding-right: 15px;
+    padding-left: 30px; /* 좌측 여백 조정 */
+    padding-right: 15px; /* 우측 여백 조정 */
   }
 }
 
@@ -1180,6 +1169,93 @@ a:hover {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.section {
+  padding: 60px 0;
+}
+
+.paralax-mf {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay-mf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.title-box-2 {
+  margin-bottom: 30px;
+}
+
+.title-box-2 .title-left {
+  color: #333;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.box-shadow-full {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.contact-mf {
+  margin-top: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+.more-info .lead {
+  font-size: 16px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.list-ico {
+  list-style: none;
+  padding: 0;
+}
+
+.list-ico li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.socials ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.socials ul li {
+  margin-right: 10px;
+}
+
+.socials ul li a {
+  color: #333;
+  font-size: 18px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
 .footer-paralax {
   padding: 4rem 0 0 0;
 }
@@ -1275,20 +1351,6 @@ a:hover {
   }
 }
 /* 커뮤니티 섹션 스타일 */
-/* 사이트 소개 제목과 그 아래 텍스트의 글꼴 변경 */
-
-.title-left {
-  font-family: 'Arial', sans-serif; /* Contact 글자의 글꼴로 변경 */
-  font-size: 2rem; /* 원하는 크기로 조정 */
-}
-
-.custom-lead {
-  font-family: 'Arial', sans-serif; /* Contact 글자의 글꼴로 변경 */
-  font-size: 1rem; /* 원하는 크기로 조정 */
-  line-height: 1.6; /* 줄 간격 조정 */
-  text-align: justify; /* 양쪽 정렬 */
-  margin: 0; /* 여백 제거 */
-}
 .community-mf {
   background: white;
   padding: 30px;
@@ -1397,7 +1459,6 @@ a:hover {
   background: #0056b3;
   color: white;
 }
-
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
@@ -1612,69 +1673,7 @@ a:hover {
 .widget-tags ul li a {
   color: #fff;
 }
-/* 문의하기 섹션 스타일 */
-#contact {
-  padding: 60px 0;
-}
 
-.contact-mf .box-shadow-full {
-  padding: 30px;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.contact-mf .contact-contact {
-  margin-bottom: 30px;
-}
-
-.contact-mf .contact-contact h2 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.contact-mf .contact-details {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-mf .contact-details li {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.contact-mf .php-email-form {
-  width: 100%;
-}
-
-.contact-mf .php-email-form .form-group {
-  margin-bottom: 20px;
-}
-
-.contact-mf .php-email-form .form-control {
-  border-radius: 4px;
-  padding: 10px 15px;
-  box-shadow: none;
-  font-size: 16px;
-}
-
-.contact-mf .php-email-form .form-control:focus {
-  border-color: #0078ff;
-}
-
-.contact-mf .php-email-form button[type=submit] {
-  background: #0078ff;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact-mf .php-email-form button[type=submit]:hover {
-  background: #0056b3;
-}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
