@@ -91,7 +91,32 @@
             }
         }
 
-
+        .pcontainer {
+            display: flex;
+            align-items: center; 
+            justify-content: flex-start; 
+            flex-wrap: wrap;
+            max-width: 100%;
+            margin: 0px;
+            padding:20px;
+            gap: 20px; 
+        }
+        .pitem {
+            flex: 1; 
+            min-width: 200px; 
+        }
+        @media (max-width: 600px) {
+            .pcontainer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .pitem {
+                min-width: auto;
+                width: 100%;
+                margin-right: 10px;
+            }
+        }
 
   </style>
 </head>
@@ -275,7 +300,7 @@
                   </div>
                   <br><br>
                   <h3>
-                    1.&nbsp;승리의 두산
+                    2.&nbsp;승리의 두산
                   </h3>
                   <hr>
                   <div class="scontainer">
@@ -315,22 +340,89 @@
       </div>
     </section>
 
-    <!-- <div class="article-content">
-      <div class="image-container">
-        <section id="team"></section>
-        <h1>
-          팀 응원가<br>
-        </h1> 
-        <h3>
-          경기 시작 음악
-        </h3>
-        <hr>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/IeyOr91IuyA?si=eY-fKS5AX0eUkKOr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section class="blog-wrapper sect-pt4" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="post-box">
+              <div class="post-thumb">
+                <div class="simage-container">
+                  <div class="pcontainer">
+                    <div class="pitem">
+                        <img src="picture/No.31.jpg" alt="Sample Image" style="width: 200px;">
+                    </div>
+                    <div class="pitem">
+                      <h2>No.31 정수빈</h2>
+                    </div>
+                    <div class="pitem">
+                        <audio controls>
+                            <source src="music/No.31.mp3" type="audio/mpeg" style="margin-left: 50px;">
+                        </audio>
+                    </div>
+                    <div class="pitem">
+                        <p>
+                          수빈! 두산의 정수빈<br> 
+                          수빈! 승리를 위하여<br>
+                          수빈! 힘차게 치고 달려<br> 
+                          최강두산 정수빈! (반복)<br>
+                        </p>
+                    </div>
+                </div>
+            
+              <div class="article-content">
+                <div class="article-content">
+                  <div class="pcontainer">
+                    <div class="pitem">
+                        <img src="picture/No.25.jpg" alt="Sample Image" style="width: 200px;">
+                    </div>
+                    <div class="pitem">
+                        <h2>No.25 양의지</h2>
+                    </div>
+                    <div class="pitem">
+                        <audio controls>
+                            <source src="music/No.25.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="pitem">
+                        <p>
+                          두산의 안방마님 양의지<br>
+                          두산의 안방마님 양의지<br>
+                          안타를 날려줘요<br>
+                          홈런을 날려줘요<br>
+                          두산의 안방마님 양의지(반복)<br>
+                        </p>
+
+                    
+                    </div>
+                </div>
+                <div class="article-content">
+                  <div class="article-content">
+                    <div class="pcontainer">
+                      <div class="pitem">
+                        <div style=" float: left; width: 50%;">
+                          <h2><img src="picture/No.51.jpg" width="200px;" align="middle">No.51 조수행</h2>
+                          
+                        </div>
+                        <div style="float: left; width: 50%;">
+                          <audio src="music/No.51.mp3" controls></audio>
+                          <p><br>
+                            조수행! 조수행! 조수행! 조수행!<br> 
+                            안타치고 도루하고 <br>
+                            라라라라 라라라라라<br>
+                            조 수 행(반복)<br><br><br><br>
+                          </p>
+                        </div>
+  
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="text-container">
-        <p>두산 팬들이 실제로 경기장에서 들으면 웅장한 느낌을 받을 수 있다.</p>
-      </div>
-    </div> -->
+    </section>
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
