@@ -233,3 +233,7 @@
   new PureCounter();
 
 })()
+function showAlert(event) {
+  event.preventDefault(); // 링크 기본 동작 막기
+  alert("아직 서비스 준비중입니다");
+}
