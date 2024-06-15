@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DevFolio Bootstrap Portfolio Template - Blog Single</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <!-- <style>
+    .image-container {
+        float: left;
+        margin-right: 20px;
+    }
+    .text-container {
+        overflow: auto; 
+    }
+</style> -->
+  <style>
+    .image-container {
+        float: left;
+        margin-right: 20px;
+    }
+    .text-container {
+        overflow: auto;
+    }
+    @media (max-width: 600px) {
+        .image-container {
+            float: none;
+            display: block;
+            margin: 0 auto;
+        }
+        .text-container {
+            overflow: visible;
+        }
+    }
+
+    @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .textdoosan-container {
+                margin-left: 0;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+  
+        .scontainer {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            max-width: 1000px;
+            margin: 0;
+            padding: 0;
+        }
+        .stext-container {
+            margin-left: 20px;
+        }
+        @media (max-width: 600px) {
+            .scontainer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .stext-container {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+
+        .pcontainer {
+            display: flex;
+            align-items: center; 
+            justify-content: flex-start; 
+            flex-wrap: wrap;
+            max-width: 100%;
+            margin: 0px;
+            padding:20px;
+            gap: 20px; 
+        }
+        .pitem {
+            flex: 1; 
+            min-width: 200px; 
+        }
+        @media (max-width: 600px) {
+            .pcontainer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .pitem {
+                min-width: auto;
+                width: 100%;
+                margin-right: 10px;
+            }
+        }
+
+  </style>
+
+<script>
+  function navigateToContact() {
+    window.location.href = "index.html#contact";
+  }
+  function navigateToabout() {
+    window.location.href = "index.html#about";
+  }
+  function navigateToservices() {
+    window.location.href = "index.html#services";
+  }
+</script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Fan_Link</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about" onclick="navigateToabout()">사이트소개</a></li>
+          <li><a class="nav-link scrollto" href="#services" onclick="navigateToservices()">스포츠</a></li>
+          <li><a href="community.html"><span>커뮤니티</span></a></li>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact" onclick="navigateToContact()">Contact</a></li>
+        </ul>
+      </nav>
+  </header><!-- End Header -->
+
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">원주 DB</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Blog Single Section ======= -->
+    <section class="blog-wrapper sect-pt4" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="post-box">
+              <div class="post-thumb">
+                <div class="image-container">
+                  <img src="picture/DB.svg" class="img-fluid" alt="" width="350px;">
+                </div>
+                <div class="text-container">
+                  <div class="post-meta">
+                    <h1 class="article-title">원주 DB</h1>
+                    <ul>
+                      <li>
+                        <a href="#">연고지: 원주시</a>
+                      </li>
+                      <li>
+                        <span class="bi bi-tag"></span>
+                        <a href="https://promy.kbl.or.kr/">공식 홈페이지</a>
+                      </li>
+                      <li>
+                        <a href="#team">팀 응원가</a>
+                      </li>
+                      <li>
+                        <a href="#player">선수별 응원가</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            
+              <div class="article-content">
+                <div class="article-content">
+                  <table>
+                    <tr>
+                      <th>감독:</th>
+                      <th>&nbsp김주성</th>
+  
+                    </tr>
+                    <tr>
+                      <th>주장:</td>
+                      <th>&nbsp강상재</th>       
+                    </tr>
+                  </table>
+                  <p>
+  
+                  </p>
+                  <p>
+                    한국프로농구의 프로 농구단. 연고지는 강원특별자치도 원주시.
+                    홈구장은 명륜동에 위치한 원주종합체육관이다.
+
+                    강원 FC와 더불어 둘 뿐인 강원특별자치도의 프로 스포츠팀이자 
+                    강원특별자치도 연고의 유일한 실내 스포츠팀이다. 강원 FC의 
+                    연고지도 명목상으로는 강원특별자치도 전체지만 애초에 
+                    강릉시의 뜨거운 축구 열기를 기반으로 탄생한 팀인데다 
+                    클럽하우스와 홈구장도 강릉시에 있어서 영동 지방의 
+                    지지가 더 강하다. 때문에 원주 DB는 원주를 중심으로 
+                    영서 지방을 대표하는 구단이다.
+                    
+                    창단 이래 연고지를 바꾸지 않은 몇 안 되는 국내 농구단으로, 
+                    창단 시즌부터 현재의 연고지에서만 홈경기를 치른 유일한 
+                    구단이다. 게다가 연고지에 클럽하우스 정착을 KBL이
+                    의무화하기 전 자발적으로 선수단 클럽하우스를 연고지 내에
+                    위치한 4개 구단 중 하나라서, 다른 프로 스포츠에 비해 연고지
+                    정착 의식이 옅은 KBL 10개 구단 중에서는 연고지 정착이
+                    가장 모범적으로 된 구단으로 꼽힌다. 
+                  </p>
+                  <h1>
+                    <br>팀 응원가<br>
+                  </h1> 
+                  <section id="team"></section>
+                  <h3>
+                    <br>1.&nbsp;You will never walk alone
+                  </h3>
+                  <hr>
+                  <div class="scontainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lFSkFHux1vo?si=egS8SlTL6UTZt4D8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="stext-container">
+                      <p>
+                        가사
+                      </p>
+                      <p>
+                        When you walk through a storm<br>
+                        Hold your head up high<br>
+                        And don't be afraid of the dark<br><br>
+                        
+                        At the end of a storm<br>
+                        There's a golden sky<br>
+                        And the sweet silver song of a lark<br><br>
+                        
+                        Walk on through the wind<br>
+                        Walk on through the rain<br>
+                        For your dreams be tossed and blown<br><br>
+                        
+                        Walk on, walk on<br>
+                        With hope in your heart<br>
+                        And you'll never walk alone<br><br>
+                        
+                        You'll never walk alone<br><br>
+                        
+                        Walk on, walk on<br>
+                        With hope in your heart<br>
+                        And you'll never walk alone<br><br>
+                        
+                        You'll never walk alone<br>
+                      </p>
+                    </div>  
+                  </div>
+                  <br><br>
+                  <h3>
+                    2.&nbsp;We are Liverpool
+                  </h3>
+                  <hr>
+                  <div class="scontainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/R-qnQ0OGtEs?si=15dQlmfm-oxIFfwR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="stext-container">
+                      <p>
+                        가사
+                      </p>
+                      <p>
+                        We are Liverpool, Tra la la la la,<br>
+                        We are Liverpool, tra la la la la la,<br>
+                        We are Liverpool, tra la la la la,<br>
+                        The best football team in the world - yes we are!<br><br>
+                        
+                        Poetry in motion, tra la la la la,<br>
+                        Poetry in motion, tra la la la la la,<br>
+                        Poetry in motion, tra la la la la,<br>
+                        The best football team in the world - yes we are!<br><br>
+                        
+                        If you want to know the score,<br>
+                        Listen to the Anfield roar,<br>
+                        If you face us on the park,<br>
+                        Our bite is worse than our bark - we're Liverpool!<br><br>
+                        
+                        If you see us playing there,<br>
+                        Sheer magic in the air,<br>
+                        When the big Red Army comes,<br>
+                        Better lay down your guns!<br>
+                        
+                        Went to Europe feeling good,<br>
+                        Played them how they knew we would,<br>
+                        Though they fear us going there,<br>
+                        We beat them fair and square.<br><br>
+                        
+                        One goal in the net, tra la la la la,<br>
+                        Two goals in the net, tra la la la la la,<br>
+                        Three goals in the net, tra la la la la,<br>
+                        The best football team in the world!<br>
+                      </p>
+                    </div>  
+                  </div>
+                  <br><br>
+                  <h3>
+                    3.&nbsp;Allez Allez Allez
+                  </h3>
+                  <hr>
+                  <div class="scontainer">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/n300JItMZN4?si=w5pjfOLC0YA_-eUu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="stext-container">
+                      <p>
+                        가사
+                      </p>
+                      <p>
+                        We've conquered all of Europe<br>
+
+                        We're never gonna stop<br>
+                        
+                        From Paris down to Turkey<br>
+                        
+                        We've won the fucking lot<br>
+                        
+                        Bob Paisley and Bill Shankly<br>
+                        
+                        The Fields of Anfield Road<br>
+                        
+                        We are loyal supporters<br>
+                        
+                        And we come from Liverpool<br>
+                        
+                        Allez, Allez, Allez<br>
+                        Allez, Allez, Allez<br>
+                        Allez, Allez, Allez<br>
+                        Allez, Allez, Allez(반복)<br>
+                        </p>
+                    </div>  
+                  </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-wrapper sect-pt4" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="post-box">
+              <div class="post-thumb">
+                <div class="simage-container">
+                  <div class="article-content">
+                    <div class="article-content">
+                      <h1>선수별 응원가</h1>
+                      <section id="player"></section>
+                      <div class="pcontainer">
+                        <div class="pitem">
+                          <div style=" float: left; width: 50%;">
+                            <h2><img src="picture/virgil.jpg" width="200px;" align="middle">No.4 Virgil van Dijk</h2>
+                            
+                          </div>
+                          <div style="float: left; width: 50%;">
+                            <audio src="music/virgil.mp3" controls></audio>
+                            <p><br>
+                              He's our centre-half, he's our number 4<br>
+
+                              Watch him defend, and we watch him score<br>
+                              
+                              He'll pass the ball, calm as you like<br>
+                              
+                              He's Virgil Van Dijk<br>
+                              
+                              He's Virgil Van Dijk(반복)<br>
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="article-content">
+                  <div class="article-content">
+                    <div class="pcontainer">
+                      <div class="pitem">
+                        <div style=" float: left; width: 50%;">
+                          <h2><img src="picture/msalah.webp" width="200px;" align="middle">No.11 Mohamed Salah</h2>                         
+                        </div>
+                        <div style="float: left; width: 50%;">
+                          <audio src="music/mosalah.mp3" controls></audio>
+                          <p><br>
+                            Mo Salah! Mo Salah! Mo Salah!<br>
+
+                            Running down the wing!<br>
+                            
+                            Salah, la, la, la, la, la, la,<br>
+                            
+                            The Egyptian King!<br>
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                <div class="article-content">
+                  <div class="article-content">
+                    <div class="pcontainer">
+                      <div class="pitem">
+                        <div style=" float: left; width: 50%;">
+                          <h2><img src="picture/jota.webp" width="200px;" align="middle">No.20 Diogo Jota</h2>
+                          
+                        </div>
+                        <div style="float: left; width: 50%;">
+                          <audio src="music/jota.mp3" controls></audio>
+                          <p><br>
+                            Oh, He wears number 20<br>
+
+                            He'll take us to victory<br>
+                            
+                            and when he's running down the left wing<br>
+                            
+                            He'll cut inside and score for LFC<br>
+                            
+                            He's lad from Portugal,
+                            
+                            better than Figo don't you know<br>
+                            
+                            Oh his name is Diogo<br>
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
