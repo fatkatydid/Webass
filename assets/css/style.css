@@ -1480,6 +1480,28 @@ a:hover {
   background: #0056b3;
   color: white;
 }
+.title-comments, .title-left {
+  font-size: 1.2rem; /* 제목 글자 크기 줄이기 */
+}
+
+.list-comments .comment-author {
+  font-size: 1rem; /* 댓글 작성자 글자 크기 줄이기 */
+}
+
+.list-comments p {
+  font-size: 0.9rem; /* 댓글 내용 글자 크기 줄이기 */
+}
+
+.form-comments .form-group input,
+.form-comments .form-group textarea {
+  font-size: 0.9rem; /* 입력 필드 글자 크기 줄이기 */
+  padding: 0.5rem; /* 입력 필드 패딩 줄이기 */
+}
+
+.button.button-a.button-big.button-rouded {
+  font-size: 0.9rem; /* 버튼 글자 크기 줄이기 */
+  padding: 0.5rem 1rem; /* 버튼 패딩 줄이기 */
+}
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/

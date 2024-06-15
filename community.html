@@ -29,6 +29,17 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!--instyle-->
+  <style>
+    .sidebar-fixed {
+      position: fixed;
+      top: 100px; /* Adjust this value based on your header height */
+      right: 20px; /* Adjust this value based on your layout */
+      width: 300px; /* Adjust this value based on your sidebar width */
+    }
+  </style>
+
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -120,61 +131,51 @@
                 </p>
               </div>
             </div>
+
             <div class="box-comments">
               <div class="title-box-2">
-                <h4 class="title-comments title-left">댓글 (34)</h4>
+                <h4 class="title-comments title-left">가입 댓글(34)</h4>
               </div>
               <ul class="list-comments">
                 <li>
-                  <div class="comment-avatar">
-                    <img src="assets/img/testimonial-2.jpg" alt="">
-                  </div>
                   <div class="comment-details">
-                    <h4 class="comment-author">Oliver Colmenares</h4>
+                    <h4 class="comment-author">쌍둥이 우승 가자</h4>
                     <span>2024-06-13</span>
                     <p>
-                      팬들과의 소통을 통해 더 나은 응원 문화를 만들어가요!
+                      LG에 처음을 입문 하게 된 팬입니다! 많은 정보랑 응원가 알아가서 열심히 응원할게요!
+                      LG 트윈스 우승을 기원합니다!
+                      올 시즌 멋진 경기 보여주셔서 감사하고, 끝까지 파이팅해서 꼭 우승 트로피 들어 올리시길 응원할게요!
+                      모든 선수들 화이팅! 
                     </p>
                     <a href="3">답글</a>
                   </div>
                 </li>
                 <li>
-                  <div class="comment-avatar">
-                    <img src="assets/img/testimonial-4.jpg" alt="">
-                  </div>
                   <div class="comment-details">
-                    <h4 class="comment-author">Carmen Vegas</h4>
+                    <h4 class="comment-author">클롭없는 리버플은 못살아</h4>
                     <span>2024-06-12</span>
-                    좋은 정보 감사합니다!
+                    이 사이트 덕분에 응원가를 쉽게 배우고 팀을 더 열정적으로 응원할 수 있게 되었어요!
+                    정말 많은 도움이 되었고, 앞으로도 자주 방문할 것 같아요. 우리 리버플 화이팅! 올 시즌 우승까지 달려봅시다! 
                     <a href="3">답글</a>
                   </div>
                 </li>
-                <li class="comment-children">
-                  <div class="comment-avatar">
-                    <img src="assets/img/testimonial-2.jpg" alt="">
-                  </div>
                   <div class="comment-details">
-                    <h4 class="comment-author">Oliver Colmenares</h4>
+                    <h4 class="comment-author">푸바오 대신 베어곰</h4>
                     <span>18 Sep 2017</span>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque
-                      ipsam temporibus maiores
-                      quae.
+                      응원가를 쉽게 찾아볼 수 있어서 정말 유용해요!
+                      덕분에 친구들과 더 재미있게 경기를 응원할 수 있게 되었어요. 우리 베어스! 승리를 위해 힘내자! 파이팅!
                     </p>
                     <a href="3">Reply</a>
                   </div>
                 </li>
                 <li>
-                  <div class="comment-avatar">
-                    <img src="assets/img/testimonial-2.jpg" alt="">
-                  </div>
                   <div class="comment-details">
-                    <h4 class="comment-author">Oliver Colmenares</h4>
+                    <h4 class="comment-author">류현진으로 한화 우승 가자</h4>
                     <span>18 Sep 2017</span>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit, provident cumque
-                      ipsam temporibus maiores
-                      quae natus libero optio.
+                      이 사이트 덕분에 응원가를 완벽히 익혀서 경기장에서 더 크게 응원할 수 있게 되었어요. 
+                      정말 감사드립니다. 한화 이글스 화이팅! 우승 가자!"
                     </p>
                     <a href="3">Reply</a>
                   </div>
@@ -253,53 +254,6 @@
             </div>
           </div>
         </div>
-        <div class="search-bar">
-          <select class="form-control">
-            <option value="title">제목</option>
-            <option value="content">내용</option>
-          </select>
-          <input type="text" placeholder="검색할 내용을 입력하세요" class="form-control">
-          <button type="submit" class="button button-a button-big button-rouded">검색</button>
-        </div>
-        <div class="question-list">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>번호</th>
-                <th>제목</th>
-                <th>작성자</th>
-                <th>작성일</th>
-                <th>첨부파일</th>
-                <th>조회수</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td><a href="#">최근에 응원가 곡이 바뀌거나 수정된 것이 있나요?</a></td>
-                <td>야구 응원가 암기중</td>
-                <td>2024-06-13</td>
-                <td>None</td>
-                <td>205</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td><a href="#">응원가 가사 질문 있습니다!</a></td>
-                <td>음치지만 할수있어</td>
-                <td>2024-06-12</td>
-                <td>None</td>
-                <td>150</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="pagination">
-          <a href="#">&laquo;</a>
-          <a href="#" class="active">1</a>
-          <a href="#">&raquo;</a>
-        </div>
-        <button class="write-post-button">본인확인후 글쓰기</button>
-      </div>
     </section><!-- End Blog Single Section -->
 
   </main><!-- End #main -->
